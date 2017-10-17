@@ -1,0 +1,6 @@
+{
+"run_list": [
+  "recipe[hungry_rbenv]"
+],
+  "environment": "dev"
+}

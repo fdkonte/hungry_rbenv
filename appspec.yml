@@ -1,0 +1,15 @@
+version: 0.0
+os: linux
+files:
+  - source: chef
+    destination: /etc/chef/codedeploy/hungry_rbenv
+hooks:
+  BeforeInstall:
+    - location: scripts/install-chef.sh
+  AfterInstall:
+    - location: scripts/chef-run.sh
+      timeout: 180
+  ValidateService:
+    - location: scripts/validate.sh
+      timeout: 3600
+      runas: codedeployuser
