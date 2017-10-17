@@ -1,0 +1,12 @@
+name 'hungry_rbenv'
+maintainer 'Rlab, Inc.'
+maintainer_email 'jack.konte@gmail.com'
+license 'apachev2'
+description 'Installs/Configures hungry_rbenv'
+long_description 'Installs/Configures hungry_rbenv'
+version '0.1.0'
+chef_version '>= 12.5' if respond_to?(:chef_version)
+supports 'centos'
+issues_url ''
+source_url ''
+depends 'ruby_rbenv'

@@ -1,0 +1,4 @@
+cd /tmp
+curl -O https://www.opscode.com/chef/install.sh
+chmod +x install.#!/bin/sh
+./install.sh
