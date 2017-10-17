@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: chef
-    destination: /etc/chef/codedeploy/hungry_rbenv
+    destination: /etc/chef/codedeploy/cookbooks/hungry_rbenv
 hooks:
   BeforeInstall:
     - location: scripts/install-chef.sh
